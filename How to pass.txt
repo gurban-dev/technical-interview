@@ -1,12 +1,20 @@
+Behave in a friendly manner with the interviewer as
+if you are working with them on the same team.
+
 1. Break down what you were asked.
 
    Ask follow-up clarifying questions about
    the input and the expected output.
 
    E.g.
-   Input: Array
+   Input: Given an array of integers, reverse the array.
 
    Could the array be empty?
+
+   Are the integers bounded? Meaning can they be really large
+   or really small?
+
+   Can I have a zero value?
 
    Does it store duplicate values?
 
@@ -15,12 +23,18 @@
    Will there always be a solution or does it depend
    on the input?
 
+   Should I be returning the head of the linked list or the
+   tail?
+
 2. Visualise the problem by drawing it out.
 
 3. Ask for test cases if you are not given any.
 
    Verbally walk through why you understand the output
    for the test case.
+
+   Create test cases for edge cases: empty array, negative value,
+   duplicate value, etc.
 
 4. Before coding, write an algorithm in a fashion that
    makes it appear that you don't know the answer up front.
@@ -29,11 +43,21 @@
    and explain to the interviewer why the approach isn't
    optimal.
 
-5. Avoid long periods of silence while coding.
+5. Translating the algorithm into source code:
+
+   Avoid long periods of silence while coding and persistently
+   update the interviewer on what it is that you're doing.
+
+   Break down each task in a single function.
 
 6. Explain why you went with your approach.
 
-   Talk about the time and space complexity.
+   Analyze the time and space complexity.
 
-   If it's not the most optimal solution, explain
-   why you think it's not.
+   If it's not the most optimal solution, explain why you
+   think it's not and tell them you are confident that
+   there's an approach with a more effcient time and space
+   complexity and that you just didn't have enough time to
+   come up with it.
+
+   If you have additional time, optimise your solution.
