@@ -1,0 +1,116 @@
+Format: 30-minute technical interview
+
+Focus: One primary question covering either Python Recursion, Django
+ORM/DRF, or a related/closely intertwined topic. The purpose is to
+evaluate my technical skills.
+
+The first five to 10 minutes, it will be like a conversational thing.
+Speaking it through, and then hands-on coding to solve the problem.
+
+Getting stuck and receiving a lot of help as a result indicates that you
+didn't pass.
+
+I've attached some example questions for reference. While you likely won't
+see these exact questions, they'll give you a good sense of what to expect.
+The interview is split into two parts: the first half will be a discussion
+of the concept, followed by a coding exercise. For context, a recent
+candidate was asked to reverse a linked list.
+
+Practice Coding Assessments:
+https://leetcode.com/problem-list/recursion/
+
+https://neetcode.io/problems/reverse-a-linked-list/question?list=neetcode150
+
+
+The screening Questions in this file were asked during the first phone call.
+
+Recursion with Python
+
+Question 1:
+In your own words, what is a base case in recursion?
+
+Answer:
+The condition that ends the recursion or returns a final value.
+
+Follow-up Question:
+What happens if you forget the base case in a recursive function?
+
+Answer:
+Stack overflow or infinite recursion. This is where the coding site Stack
+Overflow gets its name from.
+
+
+Question 2:
+Can you give an example of a problem where recursion is a natural fit?
+
+Answer:
+Prompt until they answer. There are many, but an intro CS class will generally
+start with tree traversal or synonyms like "walking a tree."
+
+Example applications: Working with file directories, family tree, organisational
+chart, etc.
+
+
+Quesion 3:
+When might you replace recursion with iteration in Python?
+
+Answer:
+To avoid hitting recursion limits or for performance. In most cases, it will
+require using an explicit stack/queue, as with tree traversal.
+
+-------------------------------------------------------------------------------
+Django and ORM
+
+Question 1:
+What does select_related do in the Django ORM?
+
+Answer:
+It performs an SQL join and fetches related objects in the same query.
+
+
+Question 2:
+You would use prefetch_related instead of select_related?
+
+Answer:
+When the related object is a reverse or ManyToMany relation.
+
+
+Question 3:
+How would you fix and diagnose an N+1 query issue in a DRF view returning
+nested data?
+
+Answer:
+Use select_related or prefetch_related in the queryset.
+
+
+Question 4:
+What does the term N+1 mean?
+
+Answer:
+The term N+1 means that for each item in a queryset, an additional query
+is performed to fetch related data, resulting in one plus the number of
+items queries.
+
+
+Question 5:
+What is the difference between a serialiser and a model serialiser in DRF?
+
+Answer:
+The difference between a serialiser and model serialiser in DRF is that model
+serialiser auto-generates fields from the model, whereas serialiser requires
+writing explicit fields/logic.
+
+
+Question 6:
+What does annotate(Count(...)) let you do in the ORM?
+
+Answer:
+Add aggregated fields (e.g., counts) directly to querysets for sorting/filtering
+without extra queries.
+
+
+Question 7:
+When would you use select_for_update?
+
+Answer:
+Inside a transaction to lock rows for update and prevent race conditions.
